@@ -7,6 +7,9 @@ Subway provides a highly cost-effective solution to extracting a subgraph that o
 
 To compile Subway, just run make in the root directory. The only requrements are g++ and CUDA toolkit.
 
+##### attention 
+there are 3 makefile with smt which controls the compute contability, so if you have a different nvidia you should change it. you can find it by following this link: https://developer.nvidia.com/cuda-gpus
+
 #### Input graph formats
 
 Subway accepts edge-list (.el) and weighted edge-list (.wel) graph formats, as well as the binary serialized pre-built CSR graph representation (.bcsr and .bwcsr). It is highly recommended to convert edge-list format graph files to the binary format (using tools/converter). Reading binary formats is faster and more space efficient.
